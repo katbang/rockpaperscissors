@@ -1,5 +1,3 @@
-window.addEventListener("load", sidenVises);
-
 const rock = document.querySelector("button.rock");
 const paper = document.querySelector("button.paper");
 const scissors = document.querySelector("button.scissors");
@@ -9,11 +7,10 @@ const lose = document.querySelector("#lose");
 const win = document.querySelector("#win");
 const draw = document.querySelector("#draw");
 
-function sidenVises() {
-  rock.addEventListener("mousedown", playRock);
-  paper.addEventListener("mousedown", playPaper);
-  scissors.addEventListener("mousedown", playScissor);
-}
+rock.addEventListener("mousedown", playRock);
+paper.addEventListener("mousedown", playPaper);
+scissors.addEventListener("mousedown", playScissor);
+
 function hideAll() {
   lose.classList.add("hidden");
   win.classList.add("hidden");
